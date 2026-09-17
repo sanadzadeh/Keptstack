@@ -32,15 +32,11 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
       <h1>Local AI on hardware you control.</h1>
         <p>Keptstack assesses and sets up local AI systems for businesses with a specific workflow that benefits from running on hardware they control.</p>
       </div>
-      <div class="choice-grid">
-        <button class="choice" type="button" data-open="model">
-          <h2>Business model</h2>
-          <span>Investor and validation view</span>
-        </button>
-        <button class="choice" type="button" data-open="site">
-          <h2>Business website</h2>
-          <span>Customer website</span>
-        </button>
+      <div style="margin-top:28px">
+        <button class="btn" type="button" data-open="site">View the business offer</button>
+      </div>
+      <div style="margin-top:18px;font-size:.88rem;color:var(--muted)">
+        <button type="button" class="back" data-open="model">Business model</button>
       </div>
     </div>
   </div>
@@ -121,7 +117,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
   <div class="hero">
     <div class="container hero-grid">
       <div>
-      <h1>Private document search and drafting on hardware you control.</h1>
+      <h1>Staff search and draft from your documents on hardware you control.</h1>
         <p>Keptstack starts with one job: search selected business documents, return source-backed answers and help staff draft from that material. Before any build, we map where the files live, which tools staff already use, who may access what and what information must stay inside the business.</p>
         <div class="hero-note">The assessment tests whether local AI is good enough for this workflow. If it is not, Keptstack recommends the better cloud option and stops there.</div>
       </div>
@@ -140,6 +136,23 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
       </div>
     </div>
   </div>
+
+  <section class="content">
+    <div class="container">
+      <div class="intro">
+        <h2>The delivery path</h2>
+        <p>Each engagement follows the same sequence. The build only happens after the environment map and workflow test support it.</p>
+      </div>
+      <ul class="plain-list">
+        <li><strong>1. Map the environment.</strong><span>Inspect the document store, current tools, access rules, shadow AI use and what must not leave the business.</span></li>
+        <li><strong>2. Test the workflow.</strong><span>Run labelled questions on the approved material, including questions where the correct response is “not found”.</span></li>
+        <li><strong>3. Compare and decide.</strong><span>Proceed locally only when one workflow has a clear local advantage and the quality test passes. Otherwise recommend cloud or stop.</span></li>
+        <li><strong>4. Build the smallest system.</strong><span>Configure only the hardware, model runtime, retrieval and access needed for the first job.</span></li>
+        <li><strong>5. Hand over.</strong><span>Provide the working environment, admin access, documentation, backup notes and the agreed system boundary.</span></li>
+        <li><strong>6. Optional care.</strong><span>Maintain the supported build inside the written care boundary. New workflows remain separate projects.</span></li>
+      </ul>
+    </div>
+  </section>
 
   <section class="content">
     <div class="container">
@@ -197,6 +210,15 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
   <section class="content">
     <div class="container">
       <div class="intro">
+        <h2>Safeguards</h2>
+        <p>The local system only sees approved documents. It should not crawl the rest of the network or unmanaged mailboxes. Keeping confidential material out of public AI tools is a separate control, handled through policy and appropriate browser or network controls. The local box does not enforce that on its own.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <div class="intro">
         <h2>Then test the workflow</h2>
         <p>Once the environment and boundary are clear, Keptstack tests the first workflow on the customer’s own material. The output is a go, cloud or stop recommendation.</p>
       </div>
@@ -233,22 +255,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
     </div>
   </section>
 
-  <section class="content">
-    <div class="container">
-      <div class="intro">
-        <h2>The delivery path</h2>
-        <p>Each engagement follows the same sequence. The build only happens after the environment map and workflow test support it.</p>
-      </div>
-      <ul class="plain-list">
-        <li><strong>1. Map the environment.</strong><span>Inspect the document store, current tools, access rules, shadow AI use and what must not leave the business.</span></li>
-        <li><strong>2. Test the workflow.</strong><span>Run labelled questions on the approved material, including questions where the correct response is “not found”.</span></li>
-        <li><strong>3. Compare and decide.</strong><span>Proceed locally only when one workflow has a clear local advantage and the quality test passes. Otherwise recommend cloud or stop.</span></li>
-        <li><strong>4. Build the smallest system.</strong><span>Configure only the hardware, model runtime, retrieval and access needed for the first job.</span></li>
-        <li><strong>5. Hand over.</strong><span>Provide the working environment, admin access, documentation, backup notes and the agreed system boundary.</span></li>
-        <li><strong>6. Optional care.</strong><span>Maintain the supported build inside the written care boundary. New workflows remain separate projects.</span></li>
-      </ul>
-    </div>
-  </section>
+
 
   <section class="content">
     <div class="container">
@@ -311,7 +318,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(-
     </div>
   </section>
 
-  <div class="footer"><div class="container">Prototype website. Security design, model licensing and support terms would be confirmed for each installation.</div></div>
+  <div class="footer"><div class="container">Prototype site. Security design, model licensing and support terms would be confirmed for each installation.</div></div>
 </div>
 
 <script>
